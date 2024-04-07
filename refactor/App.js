@@ -1,6 +1,6 @@
 import React, { useState} from "react";
-import { Toast } from './components/Toast';
-import { Modal } from "./components/Modal";
+import { Toast } from '../src/components/Toast';
+import { Modal } from "../src/components/Modal";
 import './App.css';
 
 function App() {
