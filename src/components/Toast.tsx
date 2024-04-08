@@ -15,18 +15,12 @@ const Toast = ({ message, timeout, onClose}) => {
             setTimeInterval((prev) => prev + 1);
             clearTimeout(timeInterval);
         }
+    }, [hovered, onClose, timeInterval, timeout]);
         
-            
-            
-            
-            
-        }, [hovered, onClose,timeInterval, timeout]);
-        
-        const handleMouseEnter = () => {
+    const handleMouseEnter = () => {
             setHovered(true);
             
-            setTimeInterval((prev) => prev + 1);
-        
+            setTimeInterval((prev) => prev + 1);  
     }  
 
     const handleMouseLeave = () => {

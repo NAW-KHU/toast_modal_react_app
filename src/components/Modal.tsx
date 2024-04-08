@@ -15,20 +15,14 @@ const Modal = ({ message, timeout, onClose }) => {
             setTimeInterval((prev) => prev + 1);
             clearTimeout(timeInterval);
         }
-
-
-
-
-
     }, [hovered, onClose, timeInterval, timeout]);
 
     const handleMouseEnter = () => {
         setHovered(true);
 
         setTimeInterval((prev) => prev + 1);
-
     }
-
+    
     const handleMouseLeave = () => {
         setHovered(false);
         onClose();
